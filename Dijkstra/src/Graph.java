@@ -14,7 +14,6 @@ public class Graph {
 
         unsettledNodes.add(source);
 
-
         while (unsettledNodes.size() != 0) {
             Node currentNode = getLowestDistanceNode(unsettledNodes);
             unsettledNodes.remove(currentNode);
@@ -31,7 +30,6 @@ public class Graph {
         }
         return graph;
     }
-
     private static Node getLowestDistanceNode(Set < Node > unsettledNodes) {
         Node lowestDistanceNode = null;
         int lowestDistance = Integer.MAX_VALUE;

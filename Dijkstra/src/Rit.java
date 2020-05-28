@@ -15,11 +15,9 @@ public class Rit extends Stap implements Comparable<Rit>{
         if (rit == this) {
             return 0;
         }
-
         else if (rit.afstand > this.afstand) {
             return -1;
         }
-
         else {
             return 1;
         }

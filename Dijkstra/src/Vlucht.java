@@ -17,11 +17,9 @@ public class Vlucht extends Stap implements Comparable<Vlucht>{
     public int compareTo(Vlucht vlucht) {
         if (vlucht == this) {
             return 0;
-
         }
         else if (prijs > vlucht.prijs && bagageKwijt > vlucht.bagageKwijt) {
             return -1;
-
         }
         else {
             return 1;
