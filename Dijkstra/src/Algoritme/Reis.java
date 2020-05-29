@@ -5,6 +5,8 @@ public class Reis {
         Graph graph = new Graph();
         graph = Graph.calculateShortestPathFromSource(graph, begin);
         eind.addToShortestPath(eind);
+
+//      Voor elke soort reis een andere print statement
         if (vervoer.equals("rit")) {
             int afstand = eind.getDistance();
             System.out.println("De rit was "+ afstand +" kilometer:");
@@ -19,7 +21,8 @@ public class Reis {
         for (Node i : eind.getShortestPath()) {
             System.out.println(i.getNaam());
         }
-//      Deze print is om ervoor te zorgen dat de prints wat overzichtelijker zijn
+
+//      Deze (lege) print is om ervoor te zorgen dat de prints wat overzichtelijker zijn
         System.out.println();
     }
 }
