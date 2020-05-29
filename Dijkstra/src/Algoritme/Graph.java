@@ -1,11 +1,8 @@
-import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.Map;
-import java.util.Set;
+package Algoritme;
+
+import java.util.*;
 
 public class Graph {
-    public Node node;
-
     public static Graph calculateShortestPathFromSource(Graph graph, Node source) {
         source.setDistance(0);
 
@@ -51,9 +48,5 @@ public class Graph {
             shortestPath.add(sourceNode);
             evaluationNode.setShortestPath(shortestPath);
         }
-    }
-
-    public void addNode(Node node) {
-        this.node = node;
     }
 }

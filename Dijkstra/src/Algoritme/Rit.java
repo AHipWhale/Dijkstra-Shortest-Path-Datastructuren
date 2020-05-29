@@ -1,3 +1,5 @@
+package Algoritme;
+
 public class Rit extends Stap implements Comparable<Rit>{
     public int afstand;
 
@@ -6,7 +8,7 @@ public class Rit extends Stap implements Comparable<Rit>{
         afstand = afnd;
     }
 
-    public int getAfstand() {
+    public int getMeeting() {
         return afstand;
     }
 

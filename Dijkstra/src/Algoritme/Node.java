@@ -1,3 +1,5 @@
+package Algoritme;
+
 import java.util.Hashtable;
 import java.util.LinkedList;
 import java.util.List;
@@ -18,8 +20,8 @@ public class Node {
         return naam;
     }
 
-    public void addDestination(Node destination, int distance) {
-        adjacentNodes.put(destination, distance);
+    public void addDestination(Stap stap) {
+        adjacentNodes.put(stap.bestemming, stap.getMeeting());
     }
 
     public Map<Node, Integer> getAdjacentNodes() {
@@ -36,6 +38,10 @@ public class Node {
 
     public void setShortestPath(List<Node> shortestPath) {
         this.shortestPath = shortestPath;
+    }
+
+    public void addToShortestPath(Node node) {
+        shortestPath.add(node);
     }
 
     public List<Node> getShortestPath() {
